@@ -1,0 +1,129 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.moon {
+    float: right;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button{
+    margin: 0.5em;
+    border-radius: 30%;
+    border: none;
+    height: 2.5em;
+    width: 4.5em;
+    background-color: #E36060;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.search-button {
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5em;
+    border: none;
+    height: 3.2em;
+    width: 5.3em;
+    background-color: #E36060;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 30px;
+    box-shadow: 0 5px #d0d0d0;
+  }
+  
+  .search-button:hover 
+  {background-color: #df4a4a}
+  
+  .search-button:active {
+    background-color: #df4a4a;
+    box-shadow: 0 2px #d3d3d3;
+    transform: translateY(2px);
+  }
+
+input {
+    border: none;
+    outline: none;
+    margin: 0.5em;
+    padding: 0.8em 1.2em;
+    border-radius: 22px;
+    background-color: #a4a0a0;
+    color: white;
+    font-weight: 500;
+    font-size: 105%;
+    width: 30vw;
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+}
+
+.location-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5em;
+
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+}
+
+.temp{
+    margin-bottom: 0;
+}
+
+.weather-description {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    height: 75px;
+    width: 75px;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 500;
+}

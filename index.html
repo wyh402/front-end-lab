@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- TODO:Link the Google Fonts to HTML File -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- TODO: Link the CSS and JS files -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script src="./assets/js/main.js"></script>
+
+
+        <title>Weather App Demo</title>
+    </head>
+    <body>
+        <button class="moon">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M195 125c0-26.3 5.3-51.3 14.9-74.1C118.7 73 51 155.1 51 253c0 114.8 93.2 208 208 208 97.9 0 180-67.7 202.1-158.9-22.8 9.6-47.9 14.9-74.1 14.9-106 0-192-86-192-192z"></path>
+            </svg>
+        </button>
+        <div class = "card">
+            <h1>HOW'S THE WEATHER TODAY?</h1>
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button class="search-button">GO</button>
+            </div>
+            <div class="weather">
+                <div class="location">
+                    <!-- TODO: Search and insert the icon with React Icons extension -->
+                    <div class="location-icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <h2 class="city">Denver, USA</h2>
+                </div>
+                <div class="weather-description">
+                    <div class="description">
+                        <img src="" alt="" class="icon">
+                        <p class="contents">CLOUDY</p> 
+                    </div>
+                    <div class="temp">
+                        <p>51°C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
