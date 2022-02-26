@@ -1,5 +1,37 @@
+:root {
+    --lightBackground: white;
+    --lightFontColor: black;
+    --lightSearchButtonColor: #E36060;
+    --darkBackground: black;
+    --darkFontColor: white;
+    --darkSearchButtonColor: #9A60E3;
+}
+
+.dark {
+    --backgroundColor: var(--darkBackground);
+    --fontColor: var(--darkFontColor);
+}
+
+.dark .search-button {
+    background-color: var(--darkSearchButtonColor);
+}
+
+.dark .search-button:hover {
+    background-color: var(--darkSearchButtonColor);
+}
+
+.dark .search-button:active {
+    background-color: var(--darkSearchButtonColor);
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.1s ease;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: var(--backgroundColor);
+    color: var(--fontColor);
 }
 
 .moon {
@@ -27,7 +59,7 @@ body {
     border: none;
     height: 2.5em;
     width: 4.5em;
-    background-color: #E36060;
+    background-color: var(--searchButtonColor);
     color: white;
     font-size: 0.9em;
     font-weight: 500;
@@ -96,6 +128,7 @@ input {
 .description{
     display: flex;
     justify-content: center;
+    text-transform: capitalize;
 }
 
 .temp{
@@ -105,7 +138,7 @@ input {
 .weather-description {
     display: flex;
     justify-content: space-around;
-    width: 33%;
+    width: 20%;
 }
 
 .description {
@@ -126,4 +159,10 @@ input {
     justify-content: center;
     font-size: 40px;
     font-weight: 500;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
 }
