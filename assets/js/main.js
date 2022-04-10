@@ -25,12 +25,14 @@ class Weather {
         const { icon, description } = data.weather[0];
         const { temp } = data.main;
         const { country } = data.sys;
+        const { wind } = data.wind
         console.log(name, icon, description, temp, country);
         document.querySelector(".city").innerText = name + ", " + country;
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".contents").innerText = description.toUpperCase();
         document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".weather").classList.remove("loading");
+        // document.querySelector("#wind").style.transform = `rotate(${data.wind.deg}deg)`
     }
 
     search() {
