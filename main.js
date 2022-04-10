@@ -53,7 +53,7 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event) 
     }
 });
 
-weather.fetchWeather("Denver");
+weather.fetchWeather("San Francisco");
 
 // Enabling Night Mode Toggle
 const toggle = document.getElementById("toggle");
